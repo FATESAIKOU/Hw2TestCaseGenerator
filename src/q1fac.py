@@ -10,7 +10,7 @@ def createGenerator(cfg):
     
     now = 0
     new = 0
-    for i in xrange(q_size):
+    for _ in xrange(q_size):
         new = random.randint(q_from, q_to)
         now = now + new
 
