@@ -28,11 +28,11 @@ def main():
     
     
     q_ifile_src = open(q_ifile, 'w')
-    q_ifile_src.write('\n'.join(inputs))
+    q_ifile_src.write('\n'.join([str(ip) for ip in inputs if ip != None]) + '\n')
     q_ifile_src.close()
     
     q_ofile_src = open(q_ofile, 'w')
-    q_ofile_src.write('\n'.join(outputs))
+    q_ofile_src.write('\n'.join([str(op) for op in outputs if op != None]) + '\n')
     q_ofile_src.close()
 
 
